@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Perfil personal</h1>
+
+    <form action="#" method="post"> <!-- action="#" se utiliza comúnmente como un marcador para referirse al mismo documento actual-->
+                                    <!-- method="post" indica que los datos del formulario se enviarán al servidor utilizando el método POST de HTTP-->
+        <fieldset> <!--se utiliza para agrupar elementos relacionados en un formulario-->
+            <legend>Información Personal</legend><br> <!-- se utiliza dentro de un elemento <fieldset> para proporcionar un título o una leyenda descriptiva para el grupo de elementos dentro del <fieldset> -->
+            <label for="tipo-usuario"> Tipo-usuario</label><!-- Se utiliza para etiquetar los campos de entrada, dándoles un nombre representativo para
+                comprender qué información debe ingresarse en cada uno.-->
+            <input type="text" id="tipo-usuario" name="nombre" value="Estudiante" readonly><br><br>
+            <!--readonly evita que el usuario modifique accidentalmente o intencionalmente el valor del elemento, manteniendo así la integridad de los datos mostrados.-->
+            <label for="Nombre">Nombre completo:</label>
+            <input type="text" id="Nombre" name="nombre" required><br><br>
+            <!--required especificar que un campo de formulario debe ser completado antes de que el formulario pueda ser enviado.-->
+            <label for="email">Correo electronico: </label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="edad">Ingrese su edad: </label>
+            <input type="number" id="edad" name="edad" required><br><br>
+            <label for="nacionalidad">Nacionalidad: </label>
+            <select name="nacionalidad" id="nacionalidad">
+                <option value="Argentina">Argentina</option>
+                <option value="Perú">Perú</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Colombia">Colombia</option>
+            </select><br><br>
+            <label for="condicion-laboral">Condicion laboral:</label>
+            <select name="condicion-laboral" id="condicion-laboral">
+                <option value="Desempleado">Desempleado</option>
+                <option value="En búsqueda laboral">En búsqueda laboral</option>
+                <option value="trabajo part time">Trabajo part-time</option>
+                <option value="trabajo full time">Trabajo full-time</option>
+            </select><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Gustos Personales</legend><br>
+            <label for="gustos-musicales">Gustos-musicales</label>
+            <input type="text" id="gustos-musicales" name="gustos-musicales" required><br><br>
+            <label for="comidas-preferidas">Comidas-Preferidas</label>
+            <select name="comidas-preferidas" id="comidas-preferidas"> 
+                <option value="Asado">Asado</option>
+                <option value="milanesa">Milanesa</option>
+                <option value="Tarta">Tarta</option>
+                <option value="Fideos">Fideos</option>
+            </select><br><br>
+        </fieldset>
+        <input type="checkbox" id="recordar-datos" name="recordar-datos">
+        <label for="recordar-datos">Recordar datos: </label><br><br>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+</html>
