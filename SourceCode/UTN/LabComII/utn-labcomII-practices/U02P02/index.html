@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        td,
+        th {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+        }
+        table {
+        width: 100%;
+        }
+        </style>
+</head>
+<body>
+        <h2>Tabla simple</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>columna 1</th>
+                    <th>columna 2</th>
+                    <th>columna 3</th>
+                    <th>columna 4</th>
+                </tr>
+                </thead>
+            <tbody>
+                <tr>
+                    <td>fila 1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>fila 2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>fila 3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table> <hr>
+
+        <h2>Tabla compleja</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Encabezado 1</th> <!--significa que esa celda debe ocupar dos filas-->
+                    <th colspan="2">Encabezado 2</th> <!-- significa que esa celda debe ocupar dos columnas-->
+                    <th rowspan="2">Encabezado 3</th>
+                    <th rowspan="2">Encabezado 4</th>
+                </tr>
+                <tr>
+                    <th>Subencabezado 2.1</th>
+                    <th>Subencabezado 2.2</th>
+                </thead>
+            <tbody>
+            <tr>
+                <td>Fila 1, Columna 1</td>
+                <td>Fila 1, Columna 2.1</td>
+                <td>Fila 1, Columna 2.2</td>
+                <td>Fila 1, Columna 3</td>
+                <td><a href="#">Enlace 1</a></td> <!--sirve para agregar un enlace-->
+            </tr>
+            <tr>
+                <td>Fila 2, Columna 1</td>
+                <td>Fila 2, Columna 2.1</td>
+                <td>Fila 2, Columna 2.2</td>
+                <td>Fila 1, Columna 3</td>
+                <td><a href="#">Enlace 1</a></td>
+            </tr>
+            <tr>
+                <td>Fila 3, Columna 1</td>
+                <td>Fila 3, Columna 2.1</td>
+                <td>Fila 3, Columna 2.2</td>
+                <td>Fila 3, Columna 3</td>
+                <td><a href="#">Enlace 1</a></td>
+            </tr>
+            <tr>
+                <td>Fila 4, Columna 1</td>
+                <td>Fila 4, Columna 2.1</td>
+                <td>Fila 4, Columna 2.2</td>
+                <td>Fila 4, Columna 3</td>
+                <td><a href="#">Enlace 1</a></td>
+            </tr>
+        </tbody>
+        </table>
+</body>
+</html>
