@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>FC BARCELONA</h1>
+    </header>
+    <div class="container">
+        <!-- Navegación / cotenedor izquierdo -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Contenedor principal -->
+        <main>
+            <section>
+                <h2>Formulario de Contacto</h2>
+                <form>
+                    <table>
+                        <tr>
+                            <td class="Adatos"><label for="nombre">Nombre:</label></td>
+                            <td><input type="text" id="nombre" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email:</label></td>
+                            <td><input type="email" id="email" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="edad">Edad:</label></td>
+                            <td><input type="number" id="edad"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="color">Color preferido:</label></td>
+                            <td><input type="color" id="color"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="comentario">Comentario:</label></td>
+                            <td><textarea id="comentario" minlength="10"></textarea></td> <!--minlength especifica la longitud mínima que debe tener el valor de entrada de un campo de texto para ser considerado válido por el navegador.-->
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="Enviar"></td>
+                        </tr>
+                    </table>
+                </form>
+            </section>
+            
+        </main>
+        <!-- Contenedor secundario / derecho -->
+        <div class="right">
+            <h2>Información Adicional</h2>
+            <p> Para mas Información puede comunicarse con: olorteguopedro@gmail.com
+            </p>
+        </div>
+    </div>
+    <!-- Pie de Página-->
+    <footer>
+        <p>© Pedro Mendieta</p>
+    </footer>
+
+</body>
+
+</html>

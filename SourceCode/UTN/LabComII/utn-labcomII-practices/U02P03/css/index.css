@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+  }
+  
+ 
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fb0808e6;
+  }
+  
+  div.container {
+    overflow: auto;
+  }
+  
+  header {
+    background-color: #181733;
+    padding: 15px;
+    text-align: center;
+    }
+ 
+    
+  nav {
+    float: left;
+    width: 20%;
+    text-align: center;
+  }
+  
+  nav ul {
+    padding-left: 0px;
+  }
+  
+  nav li {
+    list-style: none;
+  }
+  
+  nav li a {
+    background-color: #e5e5e5;
+    padding: 8px;
+    margin-top: 7px;
+    display: block;
+    width: 100%;
+    color:  #181733;
+    font-weight: 700;
+  }
+  
+  main {
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+  }
+  
+  .right {
+    background-color: #e5e5e5;
+    float: left;
+    width: 20%;
+    padding: 15px;
+    margin-top: 7px;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: #e5e5e5;
+    text-align: center;
+    padding: 10px;
+    margin-top: 7px;
+  }
+  
+  /* For mobile phones: */
+  @media only screen and (max-width: 620px) {
+    nav,
+    main,
+    .right {
+      width: 100%;
+    }
+  }
+    /* Estilos específicos para las imágenes dentro de .imagenes-galleria */
+  .imagenes-galleria img{
+    
+      width: 200px; /*Ancho deseado para las imágenes*/
+      height: auto; /*La altura se ajustará automáticamente para mantener la proporción*/
+      margin-bottom: 5px; /*Espacio entre cada imagen*/
+  
+  }
+  h2, h3 {
+    color: red;
+  }
+  p {
+    color: black;
+  }
+  .noticias-lista{
+    color: black;
+  }
+  td {
+    color: black;
+  }
