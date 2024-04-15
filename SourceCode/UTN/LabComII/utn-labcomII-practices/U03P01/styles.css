@@ -1,0 +1,53 @@
+body {
+    font-family: sans-serif;
+    background-color: rgb(245, 245, 245);
+}
+h1 {
+    font-size: 24px; /*TAMAÑO DE LA LETRA*/
+    color: #242424; /*COLOR*/
+    font-weight: 900; /*GROSOR*/
+}
+h2 {
+    font-size: 20px; /*TAMAÑO DE LA LETRA*/
+    color: #606060;
+    font-weight: 800;/*GROSOR*/
+}
+
+p {
+    font-size: 14px;/*TAMAÑO DE LA LETRA*/
+    margin-bottom: 30px;/*espacio hacia abajo*/
+    margin-top: 30px; /*espacio hacia arriba*/
+    
+}
+ul {
+    margin-left: 100px; /*espacio hacia la izquierda*/
+    padding: 20px;/* se utiliza para agregar espacio entre el borde de un elemento y su contenido.*/
+    border: solid 2px blue; /*Permiten especificar el estilo, el ancho y el color del borde de un 
+    elemento*/
+    width: 40%; /* se utiliza para establecer el ancho de un elemento en relación con el ancho de su contenedor padre.*/
+}
+
+li {
+    font-family: monospace; /*especifica el tipo de fuente (se pueden setear fuentes ya 
+    incluidas en el navegador o importar algunas más “customizadas”).
+    */
+    font-size: 18px;/*TAMAÑO DE LA LETRA*/
+    list-style: none; /* se utiliza para eliminar los marcadores o viñetas de una lista */
+    padding: 10px;/* se utiliza para agregar espacio entre el borde de un elemento y su contenido.*/
+}
+
+li:hover{
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
+.diseño_extra, 
+.diseño_extra a{
+    color: green;
+}
+a {
+    font-weight: bold; /*se utiliza para especificar el grosor de la fuente de un elemento de texto en negrita*/
+    color: blue;
+}
+li a {
+    color: orange; /*establece el color del texto*/
+}
