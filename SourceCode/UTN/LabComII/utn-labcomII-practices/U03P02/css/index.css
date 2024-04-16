@@ -1,0 +1,60 @@
+
+
+html
+{
+ box-sizing: border-box; /*Su función principal es controlar cómo se calculan el ancho y el alto de un elemento, incluidos su relleno (padding) y su borde (border).*/
+}
+*, 
+*::before,
+*::after {
+ box-sizing: inherit;
+ margin: 0;
+ padding: 0;
+}
+body {
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+ Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav {
+   
+ width: 100%; /*se utiliza para establecer el ancho de un elemento en una página web. */
+ background-color: #3a22f46d; /*se utiliza para establecer el color de fondo de un elemento en una página web*/
+ padding-left: 30px;/* espacio hacia la izquierda*/
+ padding-right: 30px;/* espacio hacia la derecha*/
+ padding-top: 10px;/* espacio hacia la arriba*/
+ padding-bottom: 10px;/* espacio hacia la abajo*/
+ display: flex;/* - El elemento se comporta como un elemento de bloque y establece su contenido (hijos) de acuerdo con el modelo de flexbox (Caja Flexible)*/
+ justify-content: space-between;/* nos permite establecer la manera en que los item-flex se distribuirán en el elemento padre*/
+ align-items: center;/*alinea los ítems en el medio del contenedor  padre. */
+ font-weight: bold;/*se utiliza para especificar el grosor o "peso" de la fuente de un texto*/
+}
+.logo {
+ color: #030303;/* se utiliza para dar color al texto*/
+ font-weight: 700;/*se utiliza para especificar el grosor o la "pesadez" de la fuente de un elemento de texto en una página web.*/
+ display: inline-block;/* se utiliza para cambiar el comportamiento de un elemento, permitiéndole comportarse como una combinación 
+entre un elemento en línea (inline) y un elemento de bloque (block).
+Esto significa que el elemento se mostrará en la misma línea que el contenido circundante, 
+pero también respetará el ancho, el alto y el margen que se le asignen, como si fuera un elemento de bloque.*/
+
+}
+.nav-links {
+ list-style: none;/*se utiliza para eliminar los marcadores o viñetas de una lista */
+ display: flex;
+
+}
+.nav-item a {
+ display: inline-block;
+ padding: 10px 15px;/* se utiliza para agregar espacio alrededor del contenido de un elemento*/
+ text-decoration: none;/* se utiliza para eliminar cualquier decoración de texto, como subrayado, en un elemento */
+ color: #030303;
+}
+    
+.nav-item:hover {
+ background-color: #cac4f4;
+}
+.nav-item:hover a {
+ color: black;
+}
+.nav-item-login {
+ border: solid 2px rgba(234, 116, 248, 0.473); /*se utiliza para establecer un borde alrededor de un elemento.*/
+}
